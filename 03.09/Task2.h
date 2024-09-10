@@ -18,6 +18,9 @@ class Solution
     {
         color[n] = GRAY;
 
+        if (n % 2 == 1)
+            return false;
+
         for (int i : AdjList[n])
         {
             if (i != v)
